@@ -1,0 +1,50 @@
+/* Global Reset & Variables */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --purple-light: #7C6FCD;
+  --purple-mid: #6C5CE7;
+  --purple-dark: #5A4BD1;
+  --purple-deeper: #4A3AB5;
+  --purple-card-1: #7C6FCD;
+  --purple-card-2: #6C5CE7;
+  --purple-card-3: #5A4BD1;
+  --purple-card-4: #4A3AB5;
+  --white: #ffffff;
+  --text-dark: #1a1a2e;
+  --text-gray: #6b7280;
+  --text-light: #9ca3af;
+  --border-color: #e5e7eb;
+  --bg-light: #f8f9ff;
+  --shadow: 0 4px 20px rgba(108, 92, 231, 0.15);
+  --radius: 12px;
+  --font: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--bg-light);
+  color: var(--text-dark);
+  min-height: 100vh;
+}
+
+button {
+  font-family: var(--font);
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+input {
+  font-family: var(--font);
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

@@ -1,0 +1,161 @@
+.referral-section {
+  margin-bottom: 32px;
+}
+
+.service-row {
+  display: flex;
+  gap: 0;
+  border: 1.5px dashed var(--border-color);
+  border-radius: var(--radius);
+  padding: 18px 24px;
+  margin-bottom: 20px;
+  background: var(--white);
+  flex-wrap: wrap;
+}
+
+.service-col {
+  flex: 1;
+  min-width: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 0 16px;
+  border-right: 1px solid var(--border-color);
+}
+
+.service-col:first-child {
+  padding-left: 0;
+}
+
+.service-col:last-child {
+  border-right: none;
+}
+
+.service-col-label {
+  font-size: 12px;
+  color: var(--text-gray);
+  font-weight: 500;
+}
+
+.service-col-value {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.service-col-value.purple {
+  color: var(--purple-mid);
+}
+
+.earn-banner {
+  background: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 14px 20px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.earn-banner span {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.referral-inputs-row {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.referral-input-group {
+  flex: 1;
+  min-width: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ref-label {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.ref-input-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ref-input {
+  flex: 1;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 13px;
+  color: var(--text-gray);
+  background: var(--white);
+  min-width: 0;
+  cursor: default;
+}
+
+.code-input {
+  max-width: 140px;
+  flex: unset;
+  flex-shrink: 0;
+}
+
+.copy-btn {
+  background: var(--purple-mid);
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+  transition: background 0.2s, transform 0.1s;
+  flex-shrink: 0;
+}
+
+.copy-btn:hover {
+  background: var(--purple-dark);
+  transform: translateY(-1px);
+}
+
+.copy-btn.copied {
+  background: #10b981;
+}
+
+@media (max-width: 768px) {
+  .service-row {
+    gap: 12px;
+    padding: 14px;
+  }
+
+  .service-col {
+    flex: 1 1 40%;
+    padding: 0;
+    border-right: none;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+  }
+
+  .service-col:last-child {
+    border-bottom: none;
+  }
+
+  .referral-inputs-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .code-input {
+    flex: 1;
+    max-width: unset;
+  }
+}

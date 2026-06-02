@@ -1,0 +1,195 @@
+.referral-table-section {
+  background: var(--white);
+  border-radius: var(--radius);
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.table-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border-color);
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.entries-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--text-gray);
+}
+
+.entries-select {
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 4px 8px;
+  font-size: 14px;
+  font-family: var(--font);
+  color: var(--text-dark);
+  cursor: pointer;
+}
+
+.table-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--text-gray);
+}
+
+.table-search-input input {
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-family: var(--font);
+  color: var(--text-dark);
+  width: 200px;
+  transition: border-color 0.2s;
+}
+
+.table-search-input input:focus {
+  border-color: var(--purple-mid);
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.referral-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 500px;
+}
+
+.referral-table thead tr {
+  background: linear-gradient(135deg, #7C6FCD 0%, #6C5CE7 100%);
+}
+
+.referral-table thead th {
+  padding: 14px 20px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  white-space: nowrap;
+}
+
+.referral-table tbody tr {
+  border-bottom: 1px solid var(--border-color);
+  transition: background 0.15s;
+}
+
+.referral-table tbody tr:hover {
+  background: #f5f3ff;
+}
+
+.referral-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.referral-table td {
+  padding: 13px 20px;
+  font-size: 14px;
+  color: var(--text-dark);
+}
+
+.profit-cell {
+  font-weight: 600;
+  color: var(--purple-mid) !important;
+}
+
+.table-msg {
+  text-align: center;
+  padding: 32px !important;
+  color: var(--text-gray);
+  font-size: 14px;
+}
+
+.table-msg.error {
+  color: #ef4444;
+}
+
+.table-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  border-top: 1px solid var(--border-color);
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.table-info {
+  font-size: 13px;
+  color: var(--text-gray);
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.page-btn {
+  padding: 6px 14px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 13px;
+  font-family: var(--font);
+  color: var(--text-dark);
+  background: var(--white);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.page-btn:hover:not(:disabled) {
+  border-color: var(--purple-mid);
+  color: var(--purple-mid);
+}
+
+.page-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.page-btn.active {
+  background: var(--purple-mid);
+  border-color: var(--purple-mid);
+  color: white;
+  font-weight: 600;
+}
+
+.page-dots {
+  padding: 0 4px;
+  color: var(--text-gray);
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .table-controls {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .table-search-input input {
+    width: 160px;
+  }
+
+  .table-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .referral-table thead th,
+  .referral-table td {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+}
